@@ -1,15 +1,12 @@
-/* src/NumberSelector.css */
-
 .number-container {
   text-align: center;
   margin-top: 30px;
   padding: 0 10px;
-  
 }
 
 .cards-row {
   display: flex;
-  flex-wrap: wrap; /* automatically wrap on small screens */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
@@ -17,22 +14,76 @@
 .card {
   width: 120px;
   height: 120px;
-  text-align: center;
   cursor: pointer;
   background-color: #bb0d0d;
-  
+  color: #fff;
+  border-radius: 50%; /* Make card circular */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
 }
 
 .card.selected {
   background-color: #0fa81e;
 }
 
-.card button {
-  margin-top: 8px;
+.card-content {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.select-button {
+  margin-top: 8px !important;
 }
 
 .sum-text {
   margin-top: 15px;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.clear-selection-button {
+  background-color: #fff !important;
+  color: #000 !important;
+  margin-top: 10px !important;
+}
+
+.clear-selection-button:hover {
+  background-color: #ddd !important;
+}
+
+.clear-history-button {
+  margin-top: 10px !important;
+}
+
+.history-container {
+  margin-top: 20px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.history-list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.history-item {
+  margin-bottom: 8px;
+}
+
+.history-time {
+  color: #555;
+  font-size: 0.8rem;
 }
