@@ -1,14 +1,24 @@
-// src/App.tsx
 import React from "react";
-import MyCard from "./MyCard";
+import { Typography, Container } from "@mui/material";
+import NumberSelector from "./NumberSelector";
 
 function App() {
   return (
-    <div>
-      <MyCard />
-    </div>
+    <Container
+  sx={{
+    textAlign: "center",
+    marginTop: 5,
+    backgroundColor: "black",
+    color: "white",
+    minHeight: "100vh"
+  }}
+>
+  <Typography variant="h4" gutterBottom>
+    Learn and Test Yourself
+  </Typography>
+  <NumberSelector />
+</Container>
   );
 }
 
 export default App;
-

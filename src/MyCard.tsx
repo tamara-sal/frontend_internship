@@ -4,19 +4,17 @@ import { Card, CardContent, Typography, Button } from "@mui/material";
 
 export default function MyCard() {
   return (
-    <Card sx={{ maxWidth: 345, margin: "20px auto", padding: 2 }}>
+    <Card sx={{ maxWidth: 120,maxHeight:120 ,margin: "100px auto", padding: 1 }}>
       <CardContent>
         <Typography variant="h5" component="div">
-          Hello MUI
+        1
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          This is a simple card component you can edit yourself.
-        </Typography>
+        
         <Button
           variant="contained"
           color="primary"
           sx={{ marginTop: 2 }}
-          onClick={() => alert("Button clicked!")}
+          
         >
           Click Me
         </Button>

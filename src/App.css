@@ -4,6 +4,11 @@
   padding: 2rem;
   text-align: center;
 }
+body {
+  background-color: #f0f8ff; /* light blue */
+  margin: 0;
+  font-family: sans-serif;
+}
 
 .logo {
   height: 6em;
@@ -38,5 +43,6 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #cac7c7;
 }
+
