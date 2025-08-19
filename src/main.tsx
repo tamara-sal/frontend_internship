@@ -4,7 +4,10 @@ import { StyledEngineProvider } from '@mui/material/styles';
 import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './AppRouter';
 
+
+
 ReactDOM.createRoot(document.querySelector("#root")!).render(
+  
   <React.StrictMode>
     <BrowserRouter>
       <StyledEngineProvider injectFirst>
